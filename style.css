@@ -434,20 +434,248 @@ tr:hover {
 
 
 /* =========================
-   CERTIFICATIONS
+   CERTIFICATION GROUPS
 ========================= */
 
-#certGrid {
+.cert-group-title {
+    text-align: center;
+
+    font-size: 28px;
+
+    color: #fbbf24;
+
+    margin-top: 50px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   GROUP 1
+========================= */
+
+.cert-group-1 {
+
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
+        1fr
+        1fr
+        2fr;
 
     gap: 20px;
+
+    align-items: stretch;
+
+    margin-bottom: 60px;
 }
 
-.card:hover {
-    transform: translateY(-8px);
+
+/* =========================
+   GROUP 1 BOXES
+========================= */
+
+.cert-box {
+
+    background: #ffffff14;
+
+    border: 1px solid #fbbf24;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    backdrop-filter: blur(8px);
+
+    transition: 0.3s;
+}
+
+.cert-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 0 20px #fbbf24;
+}
+
+
+.cert-box h3 {
+
+    color: #fbbf24;
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CERTIFICATE IMAGES
+========================= */
+
+.cert-image {
+
+    display: block;
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    background: #0004;
+
+    transition: 0.3s;
+}
+
+.cert-image:hover {
+
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   IBM TWO CERTIFICATES
+========================= */
+
+.cert-pair {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+.cert-pair .cert-image {
+
+    height: 220px;
+}
+
+
+/* =========================
+   IBM BADGE
+========================= */
+
+.badge-image {
+
+    object-fit: contain;
+
+    height: 220px;
+}
+
+
+/* =========================
+   GROUP 2
+========================= */
+
+.cert-group-2 {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+/* Group 2 slightly smaller */
+
+.small-cert {
+
+    padding: 15px;
+}
+
+.small-cert .cert-image {
+
+    height: 170px;
+}
+
+.small-cert h3 {
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   IMAGE FULLSCREEN POPUP
+========================= */
+
+.image-modal {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.92);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    overflow: auto;
+
+    cursor: pointer;
+}
+
+
+.enlarged-image {
+
+    display: block;
+
+    max-width: 95vw;
+
+    max-height: 90vh;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+
+    cursor: default;
+}
+
+
+.close {
+
+    position: fixed;
+
+    top: 15px;
+
+    right: 30px;
+
+    z-index: 10000;
+
+    font-size: 45px;
+
+    color: white;
+
+    cursor: pointer;
+
+    line-height: 1;
 }
 
 
