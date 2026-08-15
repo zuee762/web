@@ -771,3 +771,122 @@ footer {
     }
 
 }
+/* =========================
+   CERTIFICATION MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cert-group-1 {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .ibm-main-box {
+
+        grid-column: span 2;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .cert-group-1 {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .ibm-main-box {
+
+        grid-column: span 1;
+
+    }
+
+    .cert-pair {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cert-group-2 {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cert-image {
+
+        height: 220px;
+
+    }
+
+    .small-cert .cert-image {
+
+        height: 200px;
+
+    }
+
+}/* =========================
+   CERTIFICATION MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cert-group-1 {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .ibm-main-box {
+
+        grid-column: span 2;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .cert-group-1 {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .ibm-main-box {
+
+        grid-column: span 1;
+
+    }
+
+    .cert-pair {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cert-group-2 {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cert-image {
+
+        height: 220px;
+
+    }
+
+    .small-cert .cert-image {
+
+        height: 200px;
+
+    }
+
+}
