@@ -212,34 +212,72 @@
     <!-- Internship -->
     <section id="internship" class="section">
 
-        <h2>Internship</h2>
+    <h2>Internship</h2>
 
-        <div class="card internship-card">
+    <div class="card internship-card">
 
-            <h3>inAmigos Foundation</h3>
+        <h3>inAmigos Foundation</h3>
 
-            <p>
-                <strong>Role:</strong>
-                Graphic Designer & Content Writer
-            </p>
+        <p>
+            <strong>Role:</strong>
+            Graphic Designer & Content Writer
+        </p>
 
-            <p>
-                <strong>Duration:</strong>
-                August 2025
-            </p>
+        <p>
+            <strong>Duration:</strong>
+            August 2025
+        </p>
 
-            <p>
-                Worked on creating visual content and writing engaging posts
-                for the foundation's digital platforms.
-            </p>
-                <img src="assets/Abhilaxman  (1)_page_1.jpg" class="profile" alt="Graphic Designer">
-                <img src="assets/Abhilaxman (2_page_1.jpg" class="profile" alt="Content Writer">
-                <h3> Letter of Appreciation</h3>
-                <img src="assets/Abhilaxman_page_1.jpg" class="profile" alt="Letter of Appreciation">
+        <p>
+            Worked on creating visual content and writing engaging posts
+            for the foundation's digital platforms.
+        </p>
+
+        <div class="internship-images">
+
+            <img
+                src="assets/Abhilaxman  (1)_page_1.jpg"
+                class="internship-image"
+                alt="Graphic Designer"
+                onclick="openImage(this)"
+            >
+
+            <img
+                src="assets/Abhilaxman (2_page_1.jpg"
+                class="internship-image"
+                alt="Content Writer"
+                onclick="openImage(this)"
+            >
 
         </div>
 
-    </section>
+        <h3>Letter of Appreciation</h3>
+
+        <div class="internship-images">
+
+            <img
+                src="assets/Abhilaxman_page_1.jpg"
+                class="internship-image"
+                alt="Letter of Appreciation"
+                onclick="openImage(this)"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Image popup -->
+
+<div id="imageModal" class="image-modal" onclick="closeImage()">
+
+    <span class="close">&times;</span>
+
+    <img id="enlargedImage" class="enlarged-image">
+
+</div>
 
 
     <!-- Certifications -->
