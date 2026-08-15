@@ -59,45 +59,7 @@ typingEffect();
 
 
 
-/* =========================
-   CERTIFICATIONS
-========================= */
 
-const certs = [
-    {
-        title: 'IBM AI',
-        desc: 'Add certificate image later'
-    },
-
-    {
-        title: 'Python',
-        desc: 'Add certificate image later'
-    },
-
-    {
-        title: 'SQL',
-        desc: 'Add certificate image later'
-    }
-];
-
-
-const grid = document.getElementById('certGrid');
-
-
-certs.forEach(cert => {
-
-    const card = document.createElement('div');
-
-    card.className = 'card';
-
-    card.innerHTML = `
-        <h3>${cert.title}</h3>
-        <p>${cert.desc}</p>
-    `;
-
-    grid.appendChild(card);
-
-});
 
 
 
