@@ -98,3 +98,29 @@ certs.forEach(cert => {
     grid.appendChild(card);
 
 });
+
+
+
+/* =========================
+   INTERNSHIP IMAGE POPUP
+========================= */
+
+function openImage(image) {
+
+    const modal = document.getElementById('imageModal');
+
+    const enlargedImage =
+        document.getElementById('enlargedImage');
+
+    enlargedImage.src = image.src;
+
+    modal.style.display = 'flex';
+}
+
+
+function closeImage() {
+
+    const modal = document.getElementById('imageModal');
+
+    modal.style.display = 'none';
+}
