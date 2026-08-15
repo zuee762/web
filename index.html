@@ -1,228 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhilaxman | Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-        }
-        header {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 30px 10px;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin-bottom: 10px;
-        }
-        section {
-            background: white;
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background: #111;
-            color: white;
-        }
-        ul {
-            list-style: square;
-            margin-left: 20px;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 6px 12px;
-            border: 1px solid white;
-            border-radius: 5px;
-        }
-        .social-links a:hover {
-            background: white;
-            color: #111;
-        }
-        .buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            background: #111;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .buttons a:hover {
-            background: #444;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 8px;
-            border: 2px solid #ddd;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #111;
-            color: white;
-            margin-top: 20px;
-        }
-        @media (max-width: 600px) {
-            section {
-                margin: 10px;
-            }
-            header img {
-                width: 120px;
-                height: 120px;
-            }
-            .gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+
+    <title>Kurma Abhilaxman | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <img src="profile.jpg" alt="Abhilaxman Photo">
-    <h1>Abhilaxman</h1>
-    <p>B.Tech Student</p>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-name">Abhilaxman</div>
 
-    <!-- Social Media Buttons -->
-    <div class="social-links">
-        <!-- Replace links with your actual profiles -->
-        <a href="mailto:abhilaxman.k@gmail.com">Mail</a>
-        <a href="https://github.com/zuee762" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/kurma-abhilaxman-810a38373/" target="_blank">LinkedIn</a>
-    </div>
-</header>
-
-<section>
-    <h2>My Details</h2>
-    <p><strong>Name:</strong> Kurma Abhilaxman</p>
-    <p><strong>Email:</strong> abhilaxman.k@gmail.com</p>
-<p>Sulthanabad, Peddapalli, Telangana, India</p>
-</section>
-
-<section>
-    <h2>Academics</h2>
-    <p><strong>Degree:</strong> B.Tech (Under Graduation)</p>
-    <p><strong>Joined Year:</strong> 2023</p>
-</section>
-
-<section>
-    <h2>Education Details</h2>
-    <table>
-        <tr>
-            <th>Qualification</th>
-            <th>Board / University</th>
-            <th>Year Passed</th>
-            <th>Marks</th>
-        </tr>
-        <tr>
-            <td>SSC</td>
-            <td>SSC Board of Telangana</td>
-            <td>2021</td>
-            <td>10 GPA</td>
-        </tr>
-        <tr>
-            <td>Intermediate</td>
-            <td>Intermediate Board of Telangana</td>
-            <td>2023</td>
-            <td>98.5%</td>
-        </tr>
-        <tr>
-            <td>B.Tech</td>
-            <td>JNTU MANTHANI</td>
-            <td>Joined 2023</td>
-            <td>Under Graduation</td>
-        </tr>
-    </table>
-</section>
-
-<section>
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Art</li>
-        <li>Writing</li>
-        <li>Animation</li>
-        <li>Digital Art</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Internship</h2>
-    <p><strong>Company:</strong> inAmigos Foundation</p>
-    <p><strong>Role:</strong> Graphic Designer & Content Writer</p>
-    <p><strong>Duration:</strong> August 2025</p>
-    <p>Worked on creating visual content and writing engaging posts for the foundation’s digital platforms.</p>
-</section>
-
-<!-- Letter of Appreciation Showcase -->
-<section>
-    <h2>Letter of Appreciation</h2>
-    <p>
-        I received Letters of Appreciation from inAmigos Foundation 
-        in recognition of my performance and contribution during my internship.
-    </p>
-
-    <div class="gallery">
-        <!-- Replace image filenames with your actual appreciation letter photos -->
-        <img src="appreciation1.jpg" alt="Certificate of Appreciation 1">
-    </div>
-</section>
-
-<section>
-    <h2>Resume</h2>
-    <div class="buttons">
-<a href="https://github.com/zuee762/web/blob/main/ABHILAXMAN%20KURMA.docx" download="ABHILAXMAN_KURMA.docx"">Download Resume</a>
+        <div class="nav-links">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#details">Details</a>
+            <a href="#academics">Academics</a>
+            <a href="#internship">Internship</a>
+            <a href="#certs">Certificates</a>
+            <a href="#contact">Contact</a>
         </div>
-</section>
+    </nav>
 
-<footer>
-    <p>© 2026 Abhilaxman | Portfolio</p>
-</footer>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+
+        <img src="assets/profile.jpg" class="profile" alt="Kurma Abhilaxman">
+
+        <h1>Kurma Abhilaxman</h1>
+
+        <h2 id="typing"></h2>
+
+        <p class="hero-location">
+            Sulthanabad, Peddapalli, Telangana, India
+        </p>
+
+        <div class="hero-buttons">
+
+            <a class="btn" href="assets/resume.pdf" download>
+                Download Resume
+            </a>
+
+            <a class="btn linkedin"
+               href="https://www.linkedin.com/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a class="btn github"
+               href="https://github.com/"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a class="btn mail"
+               href="mailto:abhilaxman.k@gmail.com?subject=Portfolio%20Inquiry">
+                Email Me
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <div class="card about-card">
+
+            <p>
+                Hello! I am <strong>Kurma Abhilaxman</strong>, a B.Tech undergraduate
+                student with an interest in Computer Science, Data Science,
+                Machine Learning, Graphic Design and Content Writing.
+            </p>
+
+            <p>
+                I enjoy learning new technologies, solving programming problems,
+                creating digital content and working on creative projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- My Details -->
+    <section id="details" class="section">
+
+        <h2>My Details</h2>
+
+        <div class="details-grid">
+
+            <div class="card">
+                <h3>Personal Details</h3>
+
+                <p><strong>Name:</strong> Kurma Abhilaxman</p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <a href="mailto:abhilaxman.k@gmail.com">
+                        abhilaxman.k@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    Sulthanabad, Peddapalli, Telangana, India
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Academics</h3>
+
+                <p>
+                    <strong>Degree:</strong>
+                    B.Tech (Under Graduation)
+                </p>
+
+                <p>
+                    <strong>Joined Year:</strong>
+                    2023
+                </p>
+
+                <p>
+                    <strong>University:</strong>
+                    JNTU Manthani
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Academic Details -->
+    <section id="academics" class="section">
+
+        <h2>Education Details</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board / University</th>
+                        <th>Year Passed</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>SSC</td>
+                        <td>SSC Board of Telangana</td>
+                        <td>2021</td>
+                        <td>10 GPA</td>
+                    </tr>
+
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>Intermediate Board of Telangana</td>
+                        <td>2023</td>
+                        <td>98.5%</td>
+                    </tr>
+
+                    <tr>
+                        <td>B.Tech</td>
+                        <td>JNTU Manthani</td>
+                        <td>Joined 2023</td>
+                        <td>Under Graduation</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section">
+
+        <h2>Hobbies</h2>
+
+        <div class="hobbies">
+
+            <div class="hobby">🎨 Art</div>
+            <div class="hobby">✍️ Writing</div>
+            <div class="hobby">🎬 Animation</div>
+            <div class="hobby">🖌️ Digital Art</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Internship -->
+    <section id="internship" class="section">
+
+        <h2>Internship</h2>
+
+        <div class="card internship-card">
+
+            <h3>inAmigos Foundation</h3>
+
+            <p>
+                <strong>Role:</strong>
+                Graphic Designer & Content Writer
+            </p>
+
+            <p>
+                <strong>Duration:</strong>
+                August 2025
+            </p>
+
+            <p>
+                Worked on creating visual content and writing engaging posts
+                for the foundation's digital platforms.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Certifications -->
+    <section id="certs" class="section">
+
+        <h2>Certifications & Achievements</h2>
+
+        <p class="section-description">
+            Some of my learning achievements and certifications.
+        </p>
+
+        <div id="certGrid"></div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Feel free to reach out to me through any of the platforms below.
+        </p>
+
+        <div class="social-buttons">
+
+            <a href="mailto:abhilaxman.k@gmail.com"
+               class="social email">
+                📧 Email
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank"
+               class="social linkedin">
+                in LinkedIn
+            </a>
+
+            <a href="https://github.com/"
+               target="_blank"
+               class="social github">
+                ◉ GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Kurma Abhilaxman. All Rights Reserved.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
-
-
-
-
