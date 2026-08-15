@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #4c1d95,
+        #2563eb
+    );
+    background-attachment: fixed;
+    color: #fff;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+
+    background: #1118;
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.nav-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #fbbf24;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 20px 50px;
+}
+
+.profile {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #fbbf24;
+
+    animation: pop 0.8s;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 20px 0 10px;
+}
+
+.hero h2 {
+    min-height: 35px;
+    color: #fbbf24;
+}
+
+.hero-location {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons,
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.btn,
+.social {
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    color: white;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn {
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed,
+        #fbbf24
+    );
+}
+
+.btn:hover,
+.social:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #0006;
+}
+
+.linkedin {
+    background: #0a66c2;
+}
+
+.github {
+    background: #24292e;
+}
+
+.mail,
+.email {
+    background: #dc2626;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 20px;
+}
+
+.section h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 35px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    background: #ffffff14;
+
+    border: 1px solid #fbbf24;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    backdrop-filter: blur(8px);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 20px #fbbf24;
+}
+
+.card h3 {
+    color: #fbbf24;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-card {
+    max-width: 850px;
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+}
+
+.card a {
+    color: #fbbf24;
+}
+
+
+/* =========================
+   EDUCATION TABLE
+========================= */
+
+.table-container {
+    overflow-x: auto;
+
+    background: #ffffff14;
+
+    border-radius: 18px;
+
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 650px;
+}
+
+th,
+td {
+    padding: 15px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ffffff33;
+}
+
+th {
+    color: #fbbf24;
+    background: #1118;
+}
+
+tr:hover {
+    background: #ffffff12;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobbies {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 20px;
+}
+
+.hobby {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #ffffff14;
+
+    border: 1px solid #ffffff30;
+
+    border-radius: 18px;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.hobby:hover {
+    transform: translateY(-6px);
+
+    border-color: #fbbf24;
+
+    box-shadow: 0 0 15px #fbbf24;
+}
+
+
+/* =========================
+   INTERNSHIP
+========================= */
+
+.internship-card {
+    max-width: 800px;
+
+    margin: auto;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+#certGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    text-align: center;
+}
+
+.contact-section p {
+    opacity: 0.85;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #0005;
+
+    margin-top: 50px;
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes pop {
+
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .nav {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 220px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .section {
+        padding: 70px 15px;
+    }
+
+}
