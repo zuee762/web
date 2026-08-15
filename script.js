@@ -7,6 +7,7 @@ const roles = [
     'Data Scientist',
     'ML Engineer',
     'Graphic Designer',
+    'Digital artist',
     'Content Writer'
 ];
 
